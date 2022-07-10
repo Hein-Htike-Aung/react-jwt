@@ -1,0 +1,29 @@
+### Login
+POST http://localhost:8800/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "john",
+    "password": "john123"
+}
+
+### Refresh
+POST http://localhost:8800/api/auth/refresh
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTc0NTE1NjV9.UNbaAzfzZDpg1Pkfk8Gz-c93dv69pumQlxNIvwFW76c"
+}
+
+### Logout
+POST http://localhost:8800/api/auth/logout
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTc0NTMxMjMsImV4cCI6MTY1NzQ1NDAyM30.QFjo6455v6zYPgxSItjinRwQvpOGnE7ABvPI4VuCW_w
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTc0NTMxMjN9.BJiFKff-AhK2GY2YrKgtnrq_L7I513-LA7t88-0WiYo"
+}
+
+### Delete User
+DELETE http://localhost:8800/api/users/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTc0NDkxNzd9.t6JIWoBWSiQGAuwvG2NBZTx5UQqxAf_BIl89VrsJJpI

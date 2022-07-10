@@ -1,0 +1,82 @@
+.app {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.loginContainer {
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		width: 400px;
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.title {
+			font-size: 16px;
+			font-weight: 100;
+		}
+
+		.content {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+			margin: 20px 0;
+
+			& > button {
+				color: rgb(164, 17, 46);
+				padding: 10px;
+				border: none;
+				cursor: pointer;
+				border-radius: 5px;
+				background-color: rgb(248, 135, 159);
+			}
+		}
+		.message {
+			color: teal;
+
+            &.error {
+                color:rgb(164, 17, 46);
+            }
+		}
+
+		.loginHeader {
+			color: teal;
+			font-weight: bold;
+			font-size: 20px;
+			margin: 10px 0;
+		}
+
+		.loginContent {
+			width: 80%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			.loginInput {
+				border: none;
+				border-bottom: 1px solid #ccc;
+				margin: 15px 0;
+				width: 100%;
+				padding: 5px 0;
+
+				&:focus-within {
+					outline: none;
+				}
+			}
+
+			.loginButton {
+				align-self: center;
+				background-color: teal;
+				color: #fff;
+				cursor: pointer;
+				border: none;
+				border-radius: 5px;
+				padding: 10px 30px;
+				font-size: 12px;
+				margin: 10px 0;
+			}
+		}
+	}
+}
